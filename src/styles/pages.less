@@ -217,18 +217,31 @@
   padding-bottom: min(90px, 10vh);
 }
 
+.wrapper-hands {
+  background-image: url(../images/lefthand.png), url(../images/righthand.png);
+  background-position: 0 5%, right 0 bottom 190px;
+  background-repeat: no-repeat;
+}
 .auth {
-  max-width: 570px;  
+  max-width: 570px;
+  min-height: 570px;
   margin-right: auto;
   margin-left: auto;
   margin: 0px auto;
-  padding: 159px 100px 127px 100px; 
-  background: url(../images/pinkcircle.png) center no-repeat;
+  padding: 150px 15px 100px; 
+  background: url(../images/pinkcircle.png) center top no-repeat;
   
-  .ui-title, .h1, h1 {
+  &-inner {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-title {
     margin-bottom: 25px;
     font-family: "Druk Text Wide Cyr";
     .font-size(24);
+    text-transform: uppercase;
+    text-align: center;
   }
 
   .ui-label {

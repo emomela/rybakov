@@ -221,8 +221,11 @@
   background-image: url(../images/lefthand.png), url(../images/righthand.png);
   background-position: 0 5%, right 0 bottom 190px;
   background-repeat: no-repeat;  
-  @media (min-width: 992px) {
-      background-size: 25vw, 25vw;
+  @media (max-width: 992px) { 
+    .wrapper-hands {     
+      background-size: 30vw, 30vw; } }
+  @media (max-width: 420px) {
+      background: none;
     }
 
 }
@@ -247,7 +250,9 @@
     text-transform: uppercase;
     text-align: center;
   }
-
+  &-links {
+    font-weight: 800;
+  }
   .ui-label {
     font-weight: 800;
   }
